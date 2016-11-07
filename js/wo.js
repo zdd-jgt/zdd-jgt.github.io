@@ -7,11 +7,29 @@ $(document).ready(function(){
         },function(){
 
         })
-    }) 
+    }); 
+    
+    $(".nav_zhao:eq(0)").on("click",function(){
+        $(".jianjie").removeClass("active");
+        $(".jingtai").removeClass("active");
+        $(".nav").removeClass("nav_active");
+        $(".biaoti").removeClass("banner_active");
+    });
+    $(".nav_zhao:eq(1)").on("click",function(){
+        $(".jianjie").addClass("active");
+        $(".jingtai").removeClass("active");
+        $(".nav").addClass("nav_active");
+        $(".biaoti").addClass("banner_active");
+    });
+   
+    $(".nav_zhao:eq(2)").on("click",function(){
+        $(".jianjie").removeClass("active");
+        $(".jingtai").addClass("active");
+        $(".nav").addClass("nav_active");
+        $(".biaoti").addClass("banner_active");
+    });
     
     
     
     
-    
-    
-})
+});

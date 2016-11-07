@@ -24,21 +24,28 @@ body{
     top: 0;
     width: 360px;
     height: 685px;
-    background-image: url(../img/53b9fb6ae4ceb.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 -90px;
+    background: #000;
+    z-index: -1;
 }
-.banner .biaoti{
+.biaoti{
     position: absolute;
     left:792px;
     top: 222px;
-    
+    transition: all 1s linear;
+}
+.banner_active{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
 }
 .banner .ban_gan2{
     position: absolute;
-    left: 674px;
-    bottom: -6px;
-    width: 886px;
+    left: 35%;
+    bottom: -1%;
+    width: 47%;
     height: 6px;
     box-sizing: border-box;
     border: 1px solid #2C60A8;
@@ -53,6 +60,7 @@ body{
     box-sizing: border-box;
     border: 1px solid #959595;
     background: #fff;
+    transition: all 1s linear;
 }
 .nav .nav_log{
     width:52px;
@@ -153,11 +161,19 @@ body{
     z-index: 2;
     /*display: none;*/
     opacity: 0;
-    transition: all .5s linear;
+    transition: all .3s linear;
 }
 .nav .nav_lei ul .nav_f .nav_zhao_fir{
-    /*display: block;*/
    opacity: 1;
+}
+.nav .nav_lei ul .nav_f .nav_zhao .nav_zhaodan{
+    width: 100%;
+    height: 100%;
+}
+.nav .nav_lei ul .nav_f .nav_zhao .nav_zhaodan a{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 .nav .nav_lei ul .nav_f .nav_zhao .nav_zhaoL{
     width: 5px;
@@ -185,7 +201,204 @@ body{
     border: 1px solid #2C60A8;
     background: #1B55A3;
 }
-
+/*neirong */
+.jianjie{
+    width: 1200px;
+    height: 0;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 1s linear;
+}
+.jianjie .jianjie_niek{
+    width: 840px;
+    height: auto;
+    float: right;
+}
+.jianjie .jianjie_niek .jj_head{
+    width: 100%;
+    height: 415px;
+    padding-top:68px;
+}
+.jianjie .jianjie_niek .jj_head .jj_biaoti1{
+    text-align: center;
+    color: #494949;
+}
+.jianjie .jianjie_niek .jj_head .jj_biaoti1 h1{
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: normal;
+}
+.jianjie .jianjie_niek .jj_head .jj_biaoti1 h2{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+/*///*/
+.jianjie .jianjie_niek .jj_head .jj_biaoti2{
+    text-align: center;
+    margin-top: 55px;
+}
+.jianjie .jianjie_niek .jj_head .jj_biaoti2 .jj_zhaopian{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: #9D8982;
+    border: 10px solid #EAECEB;
+    margin: 0 auto;
+}
+/*////*/
+.jianjie .jianjie_niek .jj_head .jj_biaoti3{
+    text-align: center;
+    margin-top: 22px;
+    color: #C4C4C4;
+}
+.jianjie .jianjie_niek .jj_head .jj_biaoti3 h1{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.jianjie .jianjie_niek .jj_head .jj_biaoti3 h2{
+    font-size: 13px;
+    font-weight: 400;
+}
+/*资料*/
+.jianjie .jianjie_niek .jj_ziliao{
+    width: 840px;
+    height: 248px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border: 1px solid #959595;
+    position: relative;
+}
+.jianjie .jianjie_niek .jj_ziliao .jjzl_head{
+    width: 144px;
+    line-height: 32px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -7%;
+    font-size: 13px;
+    color: #9A9A9A;
+    background: #fff;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 1px solid #959595;
+}
+.jianjie .jianjie_niek .jj_ziliao .jjzl_text{
+    width:367px;
+    line-height:57px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #B1B1B1;
+    margin-left: 32px;
+    float: left;
+    color: #9A9A9A;
+    font-size: 15px;
+}
+.jianjie .jianjie_niek .jj_ziliao .jjzl_text1{
+    border: 0;
+}
+.jianjie .jianjie_niek .jj_ziliao .jj_lianxi{
+    position: absolute;
+    right: 29px;
+    bottom: -34px;
+    width: 82px;
+    line-height: 32px;
+    text-align: center;
+    
+    border: 1px solid #B1B1B1;
+    border-top: 0;
+    font-size: 14px;
+    border-radius: 0 0 5px 5px;
+}
+.jianjie .jianjie_niek .jj_ziliao .jj_lianxi a{
+    color: #9A9A9A;
+}
+/*静态*/
+.jingtai{
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: all 1s linear;
+}
+.jingtai .jingtai_niek{
+    width: 840px;
+    height: auto;
+    float: right;
+}
+.jingtai .jingtai_niek .jt_head{
+    width: 100%;
+    /*height: 415px;*/
+    padding-top:68px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.jingtai .jingtai_niek .jt_head h1{
+     text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
+    color: #494949;
+}
+.jingtai .jingtai_niek .jt_text{
+    width: 820px;
+    height: 248px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border: 1px solid #959595;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.jingtai .jingtai_niek .jt_text .jt_biaoti{
+    width: 100%;
+    line-height: 24px;
+    text-align: center;
+}
+.jingtai .jingtai_niek .jt_text .jt_biaoti a{
+    font-size: 20px;
+    font-weight: normal;
+    color: #494949;
+}
+.jingtai .jingtai_niek .jt_text .jt_biaoti a:hover{
+    color: red;
+}
+.jingtai .jingtai_niek .jt_text .jt_left{
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+.jingtai .jingtai_niek .jt_text .jt_left img{
+    height: 80%;
+}
+.jingtai .jingtai_niek .jt_text .jt_right{
+    width: 70%;
+    height: 100%;
+    float: left;
+    padding: 10px;
+}
+.jingtai .jingtai_niek .jt_text .jt_right h1{
+     text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
+    color: #494949;
+    margin-top: 27px;
+    margin-bottom: 5px;
+}
+.jingtai .jingtai_niek .jt_text .jt_right span{
+    color: #A9A9A9;
+}
+.nav_active{
+    top: 100%;
+}
+.active{
+    height:auto;
+    opacity:1;
+}
 /*footer*/
 .footer{
     width: 1200px;
@@ -194,7 +407,7 @@ body{
     margin-top: 129px;
 }
 .footer .lianxi{
-    width: 400px;
+    width: 33.333%;
     height: 240px;
     text-align: center;
     float: left;
@@ -241,9 +454,43 @@ body{
 
 
 
+/*/////////////////////////////////////////////*/
 
-
-
+@media screen and (max-width:400px ){
+    
+}
+@media screen and (max-width:768px ){
+    .nav{
+        display: none;
+    }
+    .banner .biaoti{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+@media screen and (min-width:959px) and (max-width:1024px){
+    .nav{
+        display: none;
+    }
+    .banner .biaoti{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+    .footer{
+        width: 1024px;
+    }
+    .di .di_nei{
+        width: 1024px;
+    }
+}
 
 
 
