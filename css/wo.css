@@ -456,41 +456,35 @@ body{
 
 /*/////////////////////////////////////////////*/
 
-@media screen and (max-width:400px ){
-    
-}
-@media screen and (max-width:768px ){
-    .nav{
+@media screen and (min-width:400px ){
+    .banner{
+       width: 1200px;
+    }
+    .banner_L{
         display: none;
     }
-    .banner .biaoti{
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-    }
-}
-@media screen and (min-width:959px) and (max-width:1024px){
     .nav{
-        display: none;
+        top: 100%;
+        left: 22px;
     }
-    .banner .biaoti{
+    .biaoti{
         position: absolute;
         left: 0;
+        right: 0;
         top: 0;
         bottom: 0;
-        right: 0;
         margin: auto;
     }
-    .footer{
-        width: 1024px;
+    .jianjie,.jingtai{
+        height:auto;
+        opacity:1;
     }
-    .di .di_nei{
-        width: 1024px;
+    .di{
+        width:1200px;
     }
 }
+
+
 
 
 
