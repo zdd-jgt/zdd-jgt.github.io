@@ -9,6 +9,8 @@ a{
 body{
      font-family: "微软雅黑";
 }
+
+/*/////////////////////////////////////////////////////*/
 .banner{
     width: 100%;
     background-image: url(../img/53b9fb6ae4ceb.jpg);
@@ -455,7 +457,6 @@ body{
 
 
 /*/////////////////////////////////////////////*/
-
 @media screen and (min-width:400px ){
     .banner{
        width: 1200px;
@@ -483,7 +484,52 @@ body{
         width:1200px;
     }
 }
-
+@media screen and (min-width:1024px ){
+    .banner{
+       width: 100%;
+    }
+    .banner_L{
+        display: block;
+    }
+    .nav{
+        top: 0;
+        left: 360px;
+    }
+    .biaoti{
+        position: absolute;
+        left:792px;
+        top: 222px;
+        transition: all 1s linear;
+    }
+    .jianjie{
+        width: 1200px;
+        height: 0;
+        margin: 0 auto;
+        padding-bottom: 50px;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 1s linear;
+    }
+    .jingtai{
+        width: 1200px;
+        margin: 0 auto;
+        padding-bottom: 50px;
+        overflow: hidden;
+        height: 0;
+        opacity: 0;
+        transition: all 1s linear;
+    }
+    .di{
+        width:100%;
+    }
+    .nav_active{
+        top: 100%;
+    }
+    .active{
+        height:auto;
+        opacity:1;
+    }
+}
 
 
 
