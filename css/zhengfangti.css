@@ -1,0 +1,306 @@
+html {
+  font-size: 100px;
+}
+
+body {
+  font-size: 16px;
+  font-family: "苹方";
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+img {
+  border: none;
+}
+
+.jintai{
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.4);
+}
+.jintai .jinti-biaoti{
+    position: absolute;
+    right: 0;
+    left:0;
+    margin: auto;
+    top:1rem;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+}
+.jintai .jintai-nei{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 4.0rem;
+    height: 4.0rem;
+    /*background: red;*/
+    transform-origin:center center 100px;
+    transform-style: preserve-3d;
+    /*transform: rotateY(180deg);*/
+}
+.jintai .jintai-active{
+    animation: rotate 60s infinite linear;
+}
+.jintai-nei .bian{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4.00rem;
+    height: 4.00rem;
+    text-align: center;
+    line-height: 4.0rem;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+    font-size: 30px;
+}
+.jintai-nei .bian1{
+    background:url(../img/1.jpg);
+    background-size: cover;
+    color: #fff;
+    transform: rotateY(180deg) rotateZ(180deg);
+}
+.jintai-nei .bian2{
+    background:url(../img/2.jpg);
+    background-size: cover;
+    left: 0;
+    top: -100%;
+    transform-origin:center bottom;
+    transform: rotatex(-90deg);
+}
+.jintai-nei .bian3{
+    background:url(../img/3.jpg);
+    background-size: cover;
+    left: 0;
+    top: 100%;
+    transform-origin:center top;
+    transform: rotatex(90deg);
+}
+.jintai-nei .bian4{
+    background:url(../img/4.jpg);
+    background-size: cover;
+    left: -100%;
+    top: 0;
+    transform-origin:right center;
+    transform: rotateY(90deg);
+}
+.jintai-nei .bian5{
+    background:url(../img/5.jpg);
+    background-size: cover;
+    left: 100%;
+    top: 0;
+    transform-origin:left center;
+    transform: rotateY(-90deg);
+}
+.jintai-nei .bian6{
+    background:url(../img/6.jpg);
+    background-size: cover;
+    left:0;
+    top: 0;
+    /*transform-origin:center center;
+    transform: rotateY(-89deg);*/
+   transform: translateZ(4rem);
+   
+}
+@keyframes rotate{
+    0%{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
+    100%{transform: rotateX(360deg) rotateY(720deg) rotateZ(-1080deg);}
+}
+.jintai-nei .nei-active{
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+}
+.jintai-nei .bianF-active{
+    transform:rotateY(180deg) rotateZ(180deg) translateZ(0.5rem);
+}
+.jintai-nei .bianL-active{
+    transform: translateZ(4.0rem);
+}
+/*效果*/
+.bian6 .zuo-ying{
+    width:6rem;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: left bottom;
+    background-color: rgba(0,0,0,0.5);
+    transform: rotate(-45deg) translate(0.5rem,-3.56rem);
+    transition: all .5s linear;
+}
+.bian6 .you-ying{
+    width:6rem;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    transform-origin: right top;
+    transform: rotate(-45deg) translate(0rem,2.87rem);
+    transition: all .5s linear;
+}
+.bian6 .zhong-pai{
+    background: #111111;
+    width: 4rem;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    transform: rotate(-45deg) ;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition-delay: 1s;
+    transition: all .5s .5s linear;
+}
+.zhong-pai h2{
+    height: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.bian6:hover .zuo-ying{
+    transform: rotate(0deg) translate(0rem,-3rem);
+}
+.bian6:hover .you-ying{
+  
+    transform:rotate(0deg) translate(0rem,1.998rem);
+}
+.bian6:hover .zhong-pai{
+    height: 50px;
+    transform: rotate(0deg) translate(0px,0px) ;
+   
+}
+/*bian1*/
+.bian1 .bian1-img{
+    background: url(../img/1.jpg);
+    background-size: cover;
+    width: 105%;
+    height: 105%;
+    transform: translateY(0px) rotateZ(180deg) translateX(1px);
+    transition: all .5s linear;
+}
+.bian1 .bian1-img .bian1-zhao{
+    height: 4rem;
+    width: 4rem;
+    background: rgba(0,0,0,0.5);
+    
+    opacity: 0;
+    transition: all .5s linear;
+    transform: scale(0);
+}
+.bian1 .bian1-img .bian1-zhao .bian1-biaoti{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 50px;
+    width: 100%;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+.bian1:hover .bian1-img{
+    transform:translateY(0px) rotateZ(180deg) translateX(1px) scale(2);
+}
+.bian1:hover .bian1-img .bian1-zhao{
+    transform: scale(1);
+    opacity: 1;
+}
+/*bian2*/
+/*.bian2 .bian2-img{
+    background: url(../img/2.jpg);
+    background-size: cover;
+    width: 105%;
+    height: 105%;
+    transform: translateY(-100%) rotateZ(180deg) translateX(1px);
+    transition: all .5s linear;
+}
+.bian2 .bian2-img .bian1-zhao{
+    height: 4rem;
+    width: 4rem;
+    background: rgba(0,0,0,0.5);
+    
+    opacity: 0;
+    transition: all .5s linear;
+    transform: scale(0);
+}
+.bian2 .bian2-img .bian2-zhao .bian2-biaoti{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 50px;
+    width: 100%;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+.bian2:hover .bian2-img{
+    transform:translateY(-100%) rotateZ(180deg) translateX(1px) scale(2);
+}
+.bian2:hover .bian2-img .bian2-zhao{
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+*/
+
+
+
+
+
