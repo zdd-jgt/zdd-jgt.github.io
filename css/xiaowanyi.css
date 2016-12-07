@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style:none;
+    box-sizing: border-box;
+}
+.mg-bt-80 {
+    margin-bottom: 80px;
+}
+.mg-bt-60 {
+    margin-bottom: 60px;
+}
+.mg-bt-40 {
+    margin-bottom: 40px;
+}
+.header-content {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.header-content h2 {
+    font-weight: 300;
+    font-size: 40px;
+    color: #232a2f;
+}
+.header-content h3 {
+    font-family:'Raleway', sans-serif;
+    font-weight: 200;
+    text-transform: capitalize;
+    font-size: 24px;
+    color: #232a2f;
+}
+.portfolio {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background: #F4F4F4;
+}
+.portfolioContainer {
+    padding: 20px;
+}
+.portfolio .portfolio-item {
+    opacity: 0;
+    /*display: none;*/
+   transform: scale(0);
+    margin: 0;
+    padding: 0;
+    transition: all .3 ease-in-out;
+}
+.portfolio .portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+.portfolioFilter {
+    font-weight: 400;
+    margin-bottom: 20px;
+    list-style: none;
+}
+.portfolioFilter li {
+    margin-right: 10px;
+    text-decoration:none;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    display: inline;
+    cursor: pointer;
+    border: 1px solid;
+    padding: 5px 10px;
+    line-height: 45px;
+    color: #85939b;
+}
+.portfolioFilter li.active {
+    background: #9b59b6 none repeat scroll 0 0;
+    border: 1px solid #9b59b6;
+    color: #fff;
+}
+.portfolio-item {
+    position: relative;
+    color: #ffffff;
+    line-height: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.project-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.0);
+    background: rgba(0, 0, 0, 0.0);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.4em;
+    line-height: 20px;
+    text-transform: uppercase;
+    visibility: visible;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.portfolio-item a:hover > .project-hover {
+    color: rgba(255, 255, 255, 1);
+    cursor: crosshair;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.project-hover span {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.portfolio-item a:hover > .project-hover span {
+    padding: 15px 0;
+    font-family:'Raleway', sans-serif;
+}
+.project-hover b {
+    color: rgba(255, 255, 255, 0.0);
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 0;
+    text-transform: none;
+    padding-top: 0;
+    display: inline-block;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.project-hover span.plus {
+    font-size: 120px;
+    font-weight: 100;
+}
+.portfolio-item a:hover > .project-hover b {
+    color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+#nei{
+    margin: 0;
+    padding: 0;
+}

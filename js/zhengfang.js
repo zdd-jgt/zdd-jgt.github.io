@@ -4,10 +4,7 @@ $(function(){
         $('.jintai-nei div').toggleClass("nei-active");
         $('.jintai-nei div').last().toggleClass("bianL-active");
         $('.jintai-nei:first div').first().toggleClass("bianF-active");
-        console.log(index)
-//      if(){
-//          
-//      }
+        $('.bian a').toggleClass("bian-a-active");
     })
     
 })

@@ -1,0 +1,358 @@
+*{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    box-sizing: border-box;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    
+}
+img{
+    border: none;
+}
+.menu-head{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 70;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+.menu-head .menu_nei{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.menu-head .menu_nei .menu_left{
+    float: left;
+    height: 100%;
+    line-height: 70px;
+    margin-left: 20px;
+}
+.menu-head .menu_nei .menu_left a{
+    color:#000000 ;
+}
+/*第一屏*/
+.yiping{
+    width: 100%;
+    height: 100%;
+}
+.yiping .yiping-nei{
+    width: 1200px;
+    height: 100%;
+    margin:0 auto;
+}
+.yiping .yiping-nei .biaoti1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 70%;
+}
+/*第二屏*/
+.erping{
+    width: 1140px;
+    height: 485px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    
+}
+.erping .erpingLeft{
+    width: 66.66667%;
+    height: 100%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.erping .erpingRight{
+    width: 33.33333%;
+    /*height: 100px;*/
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top:80px;
+}
+.erping .erpingLeft .left_max{
+    width: 600px;
+    height: 461px;
+    background: url(../img/max1.PNG) no-repeat;
+    background-size: cover;
+    background-position: center 0;
+    border-radius: 5px;
+    /*overflow: hidden;*/
+    position: absolute;
+    left: 0px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.erping .erpingLeft .left_max .left_min{
+    width: 291px;
+    height: 364px;
+    overflow: hidden;
+    background: url(../img/min1.PNG) no-repeat;
+    background-size: cover;
+    background-position:center center;
+    border-radius: 5px;
+    position: absolute;
+    right: -137px;
+    bottom: -41px;
+}
+.erping .erpingRight h2{
+    color: white;
+    margin-bottom: 20px;
+}
+.erping .erpingRight p{
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 1.5em;
+}
+.erping .erpingRight p .gengduo{
+    display: inline-block;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 6px 20px 5px 20px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/*---------------------------*/
+/*第三屏*/
+#fh5co-blog-section{
+    padding: 100px 0 0 0;
+}
+#fh5co-pricing-section{
+    padding: 100px 0 0 0;
+}
+.fh5co-heading h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+p {
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+#fh5co-pricing-section p{
+    font-size: 16px;
+    color:#7f7f7f;
+}
+.price_img{
+    height: 50px;
+}
+/*sanpin*/
+@media screen and (max-width:450px) {
+    
+    .menu-head{
+        display: none;
+    }
+    .yiping .yiping-nei{
+        width: 100%;
+        height: 100%;
+        margin:0 auto;
+    } 
+    .erping .erping-nei{
+        width: 100%;
+        height: 100%;
+        margin:0 auto;
+    }  
+    .animate-box{
+        float: left;
+    }
+    .erping{
+        width: 88.3%;
+        height: 485px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        
+    }
+    .erping .erpingLeft{
+        width: 100%;
+        height: 100%;
+        float: left;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .erping .erpingRight{
+        width: 100%;
+        /*height: 100px;*/
+        float: left;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top:80px;
+    }
+    .erping .erpingLeft .left_max{
+        width: 80%;
+        height: 461px;
+        background: ;
+    }
+}
+@media screen and (min-width:450px) and (max-width:750px ) {
+    .menu-head{
+        display: block;
+    }
+    .menu-head .menu_nei{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .yiping .yiping-nei{
+        width: 100%;
+        height: 100%;
+        margin:0 auto;
+    }
+    .erping .erping-nei{
+        width: 450px;
+        height: 100%;
+        margin:0 auto;
+    }
+    .erping{
+        width: 88.3%;
+        height: 485px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        
+    }
+    .erping .erpingLeft{
+        width: 100%;
+        height: 100%;
+        float: left;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .erping .erpingRight{
+        width: 100%;
+        /*height: 100px;*/
+        float: left;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top:80px;
+    }  
+    .erping .erpingLeft .left_max{
+        width: 80%;
+        height: 461px;
+        background: ;
+    } 
+}
+@media screen and (min-width:750px) and (max-width:850px) {
+    .menu-head{
+        display: block;
+    }
+    .menu-head .menu_nei{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .yiping .yiping-nei{
+        width: 100%;
+        height: 100%;
+        margin:0 auto;
+    }
+    .erping{
+        width: 750px;
+        height: 485px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        
+    }
+    .erping .erping-nei{
+        width: 750px;
+        height: 100%;
+        margin:0 auto;
+    }
+    .erping .erpingLeft{
+        width: 100%;
+        height: 100%;
+        float: left;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .erping .erpingRight{
+        width: 100%;
+        /*height: 100px;*/
+        float: left;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top:80px;
+    }   
+}
+@media screen and (min-width:850px) and (max-width:1024px) {
+    .menu-head{
+        display: block;
+    }
+    .menu-head .menu_nei{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .yiping .yiping-nei{
+        width: 100%;
+        height: 100%;
+        margin:0 auto;
+    }
+    .erping{
+        width: 850px;
+        height: 485px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        
+    }
+    .erping .erping-nei{
+        width: 850px;
+        height: 100%;
+        margin:0 auto;
+    }  
+    .erping .erpingLeft{
+        width: 100%;
+        height: 100%;
+        float: left;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .erping .erpingRight{
+        width: 100%;
+        /*height: 100px;*/
+        float: left;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top:80px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

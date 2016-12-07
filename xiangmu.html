@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>项目展示</title>
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/xiangmu.css" />
+<style>
+#menu { height: 70px; list-style-type: none; margin: 0 auto; float: right;}
+#menu li { float: left; margin:  20px 10px 0 0; font-size: 14px;}
+#menu a { float: left; padding: 10px 20px; background-color: #fff; color: #333; text-decoration: none;}
+#menu .active a { color: #fff; background-color: #333;}
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+.section1 { background: url(img/53b9fb6ae4ceb.jpg) ;}
+.section2 { background: url(images/2.jpg) 50%;}
+.section3 { background: url(images/3.jpg) 50%;}
+.section4 { background: url(images/4.jpg) 50%;}
+</style>
+<!--<script src="js/jquery.js"></script>-->
+
+<script>
+$(function(){
+    $('#dowebok').fullpage({
+        sectionsColor: ['#1bbc9b', '#1A2403', '#7BAABE', '#fcfcfc'],
+        anchors: ['page1', 'page2', 'page3', 'page4'],
+        menu: '#menu'
+    });
+});
+</script>
+</head>
+
+<body>
+<div class="menu-head">
+    <div class="menu_nei">
+        <div class="menu_left">
+            <a href="index.html">首页</a>
+        </div>
+        <ul id="menu">
+            <li data-menuanchor="page1" class="active"><a href="#page1">项目</a></li>
+            <li data-menuanchor="page2"><a href="#page2">项目一</a></li>
+            <li data-menuanchor="page3"><a href="#page3">项目二</a></li>
+            <li data-menuanchor="page4"><a href="#page4">项目三</a></li>
+        </ul>
+    </div>
+    
+</div>
+<div id="dowebok">
+    <div class="section section1">
+        <div class="yiping">
+            <div class="yiping-nei">
+                <!--<h1>我的项目</h1>
+                <h4>I am a front-end engineer</h4>
+                <h3>
+                    下面是我的一些项目
+                </h3>-->
+                <img src="img/biaoti2.png" class="biaoti1" alt="" />
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="erping">
+            <div class="erpingLeft">
+                <div class="left_max">
+                    <div class="left_min"></div>
+                </div>
+                
+            </div>
+            <div class="erpingRight">
+                <h2>北京同仁堂科技股份有限公司</h2>
+                <p>
+                    运用div+css、jQuery、phpcms为主进行的网站开发
+                </p>
+                <p>
+                    <a href="http://jiaoguotao.duapp.com/yaoye/index.php" target="_blank" class="gengduo">查看更多</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div id="fh5co-blog-section" class="fh5co-light-grey-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+                        <h2>宣传页和移动端</h2>
+                        <p> </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 animate-box">
+                        <a href="#" class="item-grid">
+                            <div class="image" style="background-image: url(img/image_1.jpg)"></div>
+                            <div class="v-align">
+                                <div class="v-align-middle">
+                                    <h3 class="title">北京潜意识科技文化传播有限公司宣传页</h3>
+                                    <h5 class="date"><span>2016.8.25</span> | <span>2016.8.29</span></h5>
+                                    <p>
+                                        这是一个宣传页
+                                    <br />
+                                    我的职责是负责公共部分的管理以及招聘详情页的页面布局和交互
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 animate-box">
+                        <a href="#" class="item-grid">
+                            <div class="image" style="background-image: url(img/image_2.jpg)"></div>
+                            <div class="v-align">
+                                <div class="v-align-middle">
+                                    <h3 class="title">阅读类APP</h3>
+                                    <h5 class="date"><span>2016.9.18</span> | <span>2016.9.22</span></h5>
+                                    <p>
+                                        这是个类似于掌阅、快读这样的阅读类APP
+                                        <br />
+                                    我的职责是负责路由的设置，公共部分的处理，书页页面的布局及交互效果
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div id="fh5co-pricing-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+                        <h2>临摹</h2>
+                        <p>他们能做到的我也能做到</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="pricing">
+                        <div class="col-md-3 col-xs-6 animate-box">
+                            <div class="price-box">
+                                <h2 class="pricing-plan">Goodnex</h2>
+                                <div class="price">
+                                    <img src="img/image_4.jpg" class="price_img" alt="" />
+                                </div>
+                                <p>
+                                    <br />
+                                    <br/>
+                                    响应式页面布局
+                                    <br />
+                                    <br />
+                                    运用了删格系统来进行的页面布局，
+                                    从而实现页面响应。
+                                </p>
+                                <a href="/goodnex" target="_blank" class="btn btn-select-plan btn-sm">查看页面</a>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-3 col-xs-6 animate-box">
+                            <div class="price-box">
+                                <h2 class="pricing-plan">苹果</h2>
+                                <div class="price">
+                                    <img src="img/image_4.jpg" class="price_img" alt="" />
+                                </div>
+                                <p>
+                                    <br />
+                                    <br/>
+                                    响应式页面布局
+                                    <br />
+                                    <br />
+                                    运用了删格系统来进行的页面布局，
+                                    从而实现页面响应。
+                                </p>
+                                <a href="#" class="btn btn-select-plan btn-sm">查看页面</a>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-3 col-xs-6 animate-box">
+                            <div class="price-box">
+                                <h2 class="pricing-plan">百度舆情</h2>
+                                <div class="price">
+                                    <img src="img/image_4.jpg" class="price_img" alt="" />
+                                </div>
+                                <p>
+                                    <br />
+                                    <br />
+                                    宣传页
+                                    <br />
+                                    <br />
+                                    使用了jQuery插件fullpage.js来进行的制作。
+                                    <br />
+                                    <br />
+                                </p>
+                                <a href="/baiduyuqing" class="btn btn-select-plan btn-sm" target="_blank">查看页面</a>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-3 col-xs-6 animate-box">
+                            <div class="price-box">
+                                <h2 class="pricing-plan">京东</h2>
+                                <div class="price">
+                                    <img src="img/image_4.jpg" class="price_img" alt="" />
+                                </div>
+                                <p>
+                                    <br />
+                                    <br />
+                                    电商类首页
+                                    <br />
+                                    <br />
+                                    页面交互使用原生js和jQuery各一种，并使用了图片的懒加载。
+                                    <br />
+                                </p>
+                                <a href="/jingdong" class="btn btn-select-plan btn-sm" target="_blank">查看页面</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/jquery.fullPage.min.js"></script>
+</html>
