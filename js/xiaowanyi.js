@@ -21,6 +21,26 @@ $(".portfolioFilter li").each(function(i,v){
                 "opacity":1})
                 .dequeue();
             })
+        }else if($(this).attr("data-filter")==='mokuai'){
+//          $('.mix_all').css({
+//              "display":"none",
+//              "opacity":0
+//          })
+            $('.mix_all').queue(function(){
+                $('.portfolio-item,.mix_all')
+                .css({"transition":"all .3s ease-in-out",
+                "transform":" scale(0)",
+                "opacity":0})
+                .dequeue();
+            }).delay(300).css({"display":"none"});
+            $('.mokuai')
+            .css({"display":"block"}).delay(300)
+            .queue(function(){
+                $(this).css({"transition":"all .3s ease-in-out",
+                "transform":" scale(1)",
+                "opacity":1})
+                .dequeue();
+            })
         }else if($(this).attr("data-filter")==='illustrations'){
 //          $('.mix_all').css({
 //              "display":"none",

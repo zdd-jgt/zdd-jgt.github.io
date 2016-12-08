@@ -142,3 +142,11 @@
     margin: 0;
     padding: 0;
 }
+.project-hover p{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60%;
+    margin: auto;
+    
+}
