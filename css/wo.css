@@ -1738,6 +1738,7 @@ body {
         box-sizing: border-box;
         border: 1px solid #959595;
         position: relative;
+        margin-top: 84px;
     }
     .jianjie .jianjie_niek .jj_ziliao .jj_ziliao_nei{
         overflow: hidden;
